@@ -1,0 +1,98 @@
+/* VARAIABLES */
+:root {
+  --special: "Special Elite", system-ui;
+  --lato: "Lato", sans-serif;
+
+  --white: #f2f2f2;
+  --text: #0d0d0d;
+  --text-muted: #1a1a1a;
+  --red: #a30000;
+  --red-muted: #c41e3a;
+  --text-bg: #00000099;
+}
+
+/* GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Special Elite", system-ui;
+  color: var(--text);
+}
+
+p,
+span,
+a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--text-muted);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: end;
+  padding: 0.5rem;
+}
+
+/* Font Awesome */
+.fa-bars,
+.fa-xmark {
+  font-size: 1.2rem;
+}
+
+#burger_button.active {
+  color: var(--white);
+}
+
+#burger_button {
+  position: fixed;
+  z-index: 4;
+}
+
+#nav_links {
+  display: none;
+}
+
+#nav_links.active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav_links a {
+  color: var(--white);
+  font-family: var(--special);
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+/* FOOTER */
