@@ -23,6 +23,26 @@ h3 {
 }
 
 #nav_links .active {
+  align-items: center;
   color: var(--red);
   font-weight: 700;
 }
+
+/* MEDIA QUERIES */
+/* TABLET */
+@media screen and (min-width: 768px) {
+  main img {
+    max-width: 600px;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 5vw, 5rem);
+  }
+
+  h3 {
+    font-size: clamp(1.6rem, 3vw, 3.5rem);
+  }
+}
+
+/* DESKTOP */
+/* NO NEED */

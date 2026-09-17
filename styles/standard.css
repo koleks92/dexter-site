@@ -8,7 +8,7 @@
   --text-muted: #1a1a1a;
   --red: #a30000;
   --red-muted: #c41e3a;
-  --text-bg: #00000099;
+  --text-bg: #000000cc;
 }
 
 /* GENERAL */
@@ -124,10 +124,58 @@ header {
 footer {
   position: fixed;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   bottom: 0;
   width: 100%;
   height: 7%;
   padding: 1rem;
   background-color: var(--text-bg);
 }
+
+/* MEDIA QUERIES */
+/* TABLET */
+@media screen and (min-width: 768px) {
+  header {
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--text-bg);
+    justify-content: normal;
+  }
+
+  #burger_button {
+    display: none;
+  }
+
+  #nav_links {
+    flex: 1;
+    margin: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  #site_links {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  #SoMe_links {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #SoMe_links svg,
+  #site_links a {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+/* DESKTOP */
