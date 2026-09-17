@@ -28,6 +28,8 @@ body {
 #wrapper {
   width: 100%;
   min-height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 img {
@@ -61,8 +63,12 @@ a {
 
 /* HEADER */
 header {
+  position: fixed;
+  left: 0;
+  top: 0;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+  width: 100vw;
 }
 
 /* Font Awesome */
@@ -71,14 +77,13 @@ header {
   font-size: 1.6rem;
 }
 
-#burger_button.active {
-  color: var(--white);
-}
-
 #burger_button {
-  position: fixed;
+  position: relative;
   padding: 1rem;
+  border-radius: 2px;
   z-index: 4;
+  color: var(--white);
+  background-color: var(--text-bg);
 }
 
 #nav_links {
@@ -90,8 +95,8 @@ header {
   z-index: 3;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-color: #000000ee;
   display: flex;
   flex-direction: column;
@@ -131,6 +136,7 @@ footer {
   position: fixed;
   display: flex;
   justify-content: space-evenly;
+  left: 0;
   bottom: 0;
   width: 100%;
   height: 7%;
@@ -138,11 +144,15 @@ footer {
   background-color: var(--text-bg);
 }
 
+/* Invert color of the img */
+footer img:nth-child(2) {
+  filter: invert(1);
+}
+
 /* MEDIA QUERIES */
 /* TABLET */
 @media screen and (min-width: 768px) {
   header {
-    position: fixed;
     width: 100%;
     height: 5rem;
     background-color: var(--text-bg);
