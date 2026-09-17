@@ -79,8 +79,8 @@ header {
 
 #burger_button {
   position: relative;
-  padding: 1rem;
-  border-radius: 2px;
+  padding: 0.8rem;
+  border-radius: 0px 0 0px 10px;
   z-index: 4;
   color: var(--white);
   background-color: var(--text-bg);
