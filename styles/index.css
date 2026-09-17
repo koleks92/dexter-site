@@ -22,12 +22,6 @@ h3 {
   font-size: clamp(1.6rem, 5vw, 8rem);
 }
 
-#nav_links .active {
-  align-items: center;
-  color: var(--red);
-  font-weight: 700;
-}
-
 /* MEDIA QUERIES */
 /* TABLET */
 @media screen and (min-width: 768px) {
