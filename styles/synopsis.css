@@ -30,29 +30,54 @@ body {
 }
 
 #about {
+  display: flex;
+  flex-direction: column;
   margin: 1rem;
 }
 
-#about h3,
-p {
+#about p {
   padding: 1rem;
   background-color: var(--text-bg-muted);
   color: var(--white);
-}
-
-#about p {
   font-size: 1.2rem;
 }
 
 /* MEDIA QUERIES */
 /* TABLET */
 @media screen and (min-width: 768px) {
+  body {
+    background-size: cover;
+  }
+
   main {
-    padding: 7rem 1rem;
+    padding: 7rem 7rem;
+  }
+
+  #info_box {
+    margin: 1rem 5rem;
   }
 }
 
 /* DESKTOP */
 
 @media screen and (min-width: 1440px) {
+  main {
+    height: 100vh;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  main h1 {
+    grid-area: 1 / 1 / 2 / -1;
+  }
+
+  #info_box,
+  #about {
+    height: fit-content;
+    place-self: center;
+    margin: 1rem;
+    width: 100%;
+  }
 }
