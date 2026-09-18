@@ -1,1 +1,58 @@
 @import url("standard.css");
+
+body {
+  background-size: contain;
+}
+
+#info_box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 2px;
+  gap: 1rem;
+  background-color: var(--text-bg);
+}
+
+.info_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_row span:first-child {
+  font-weight: bold;
+}
+
+.info_row span {
+  font-family: var(--special);
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+
+#about {
+  margin: 1rem;
+}
+
+#about h3,
+p {
+  padding: 1rem;
+  background-color: var(--text-bg-muted);
+  color: var(--white);
+}
+
+#about p {
+  font-size: 1.2rem;
+}
+
+/* MEDIA QUERIES */
+/* TABLET */
+@media screen and (min-width: 768px) {
+  main {
+    padding: 7rem 1rem;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1440px) {
+}
