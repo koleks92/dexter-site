@@ -1,9 +1,5 @@
 @import url("standard.css");
 
-body {
-  background-size: contain;
-}
-
 #gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
@@ -34,7 +30,7 @@ body {
 
 /* MEDIA QUERIES */
 /* TABLET */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   main {
     padding: 7rem 1rem;
   }
@@ -46,7 +42,7 @@ body {
 
 /* DESKTOP */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   body {
     background-size: cover;
   }

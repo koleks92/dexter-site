@@ -1,1 +1,93 @@
 @import url("standard.css");
+
+#cast_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--text-bg);
+}
+
+h3 {
+  font-size: clamp(1.4rem, 8vw, 2.5rem);
+}
+
+h3,
+p {
+  color: var(--white);
+  padding: 1rem;
+}
+
+img {
+  object-fit: cover;
+  object-position: left;
+}
+
+/* MEDIA QUERIES */
+/* TABLET */
+@media screen and (min-width: 600px) {
+  main {
+    padding: 7rem 7rem;
+  }
+
+  article img {
+    width: 80%;
+  }
+
+  picture {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 1rem;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+  article {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  article picture {
+    grid-area: 1 / 1 / -1 / 2;
+  }
+
+  article:nth-of-type(even) picture {
+    grid-area: 1 / 2 / -1 / 3;
+  }
+
+  article h3 {
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: center;
+    align-self: end;
+  }
+
+  article:nth-of-type(even) h3 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  article p {
+    grid-area: 2 / 2 / 3 / 3;
+    place-self: center;
+  }
+
+  article:nth-of-type(even) p {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  article p:last-child {
+    grid-area: 3 / 2 / -1 / 3;
+    place-self: start;
+  }
+
+  article:nth-of-type(even) p:last-child {
+    grid-area: 3 / 1 / -1 / 2;
+  }
+}

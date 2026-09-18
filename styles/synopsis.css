@@ -1,9 +1,5 @@
 @import url("standard.css");
 
-body {
-  background-size: contain;
-}
-
 #info_box {
   display: flex;
   flex-direction: column;
@@ -25,7 +21,7 @@ body {
 
 .info_row span {
   font-family: var(--special);
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 5vw, 1.4rem);
   letter-spacing: 0.1rem;
 }
 
@@ -43,16 +39,20 @@ body {
 }
 
 /* MEDIA QUERIES */
-/* TABLET */
-@media screen and (min-width: 768px) {
+/* EXTRA TABLET */
+@media screen and (min-width: 600px) {
   body {
     background-size: cover;
   }
-
   main {
     padding: 7rem 7rem;
   }
-
+  #info_box {
+    margin: 1rem 2rem;
+  }
+}
+/* TABLET */
+@media screen and (min-width: 768px) {
   #info_box {
     margin: 1rem 5rem;
   }
@@ -60,7 +60,7 @@ body {
 
 /* DESKTOP */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   main {
     height: 100vh;
     display: grid;
