@@ -56,7 +56,8 @@ h1 {
 
 p,
 span,
-a {
+a,
+figcaption {
   font-family: var(--lato);
   font-weight: 500;
   font-style: normal;
