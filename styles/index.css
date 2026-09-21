@@ -30,11 +30,11 @@ h3 {
   }
 
   h2 {
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(3rem, 5vw, 5rem);
   }
 
   h3 {
-    font-size: clamp(1.6rem, 3vw, 3.5rem);
+    font-size: clamp(2rem, 3vw, 3.5rem);
   }
 }
 
