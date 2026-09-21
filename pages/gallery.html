@@ -9,6 +9,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="../scripts/burger.js" defer></script>
+    <script src="../scripts/gallery.js" defer></script>
+
     <title>Dexter - Gallery</title>
   </head>
   <body>
@@ -66,6 +68,19 @@
       </header>
       <!-- MAIN -->
       <main>
+        <div id="modal">
+          <div id="button_container">
+            <i class="fa-solid fa-close close_modal_button"></i>
+          </div>
+          <picture>
+            <img
+              class="modal_img"
+              src="../images/gallery/1.jpg"
+              alt="Descritpion"
+            />
+            <figcaption>Descritpion</figcaption>
+          </picture>
+        </div>
         <h1>Gallery</h1>
         <div id="gallery">
           <figure class="image_container">
@@ -75,13 +90,14 @@
                 srcset="../images/gallery/1.jpg"
               />
               <img
+                class="thumbnail"
                 src="../images/gallery/1_600.jpg"
-                alt="Dexter Morgan examining blood spatter evidence with a magnifying tool"
+                alt="Miami Beach, where Dexter’s sunny life hides a much darker secret."
                 loading="lazy"
               />
             </picture>
             <figcaption>
-              Dexter Morgan analyzing a blood spatter pattern at a crime scene.
+              Miami Beach, where Dexter’s sunny life hides a much darker secret.
             </figcaption>
           </figure>
 
@@ -92,8 +108,9 @@
                 srcset="../images/gallery/2.jpg"
               />
               <img
+                class="thumbnail"
                 src="../images/gallery/2_600.jpg"
-                alt="Dexter lining a room floor to ceiling with plastic sheeting"
+                alt="Dexter preparing his kill room with plastic sheeting."
                 loading="lazy"
               />
             </picture>
@@ -109,13 +126,14 @@
                 srcset="../images/gallery/3.jpg"
               />
               <img
+                class="thumbnail"
                 src="../images/gallery/3_600.jpg"
-                alt="Dexter and Debra Morgan standing together inside Miami Metro Police headquarters"
+                alt="Dexter admiring his collection of blood slides."
                 loading="lazy"
               />
             </picture>
             <figcaption>
-              Dexter and Debra Morgan at the Miami Metro Police Department.
+              Dexter admiring his collection of blood slides.
             </figcaption>
           </figure>
 
@@ -126,13 +144,14 @@
                 srcset="../images/gallery/4.jpg"
               />
               <img
+                class="thumbnail"
                 src="../images/gallery/4_600.jpg"
-                alt="Close-up of Dexter's collection of blood slides in wooden storage boxes"
+                alt="Miami at night, where Dexter’s dark side comes alive."
                 loading="lazy"
               />
             </picture>
             <figcaption>
-              A close-up of Dexter's signature glass slide collection.
+              Miami at night, where Dexter’s dark side comes alive.
             </figcaption>
           </figure>
 
@@ -143,13 +162,14 @@
                 srcset="../images/gallery/5.jpg"
               />
               <img
+                class="thumbnail"
                 src="../images/gallery/5_600.jpg"
-                alt="Dexter in a lab coat working at a forensics lab bench"
+                alt="Dexter holding the plastic wrap, almost ready."
                 loading="lazy"
               />
             </picture>
             <figcaption>
-              Dexter working undercover as a forensic technician.
+              Dexter holding the plastic wrap, almost ready.
             </figcaption>
           </figure>
 
@@ -160,13 +180,14 @@
                 srcset="../images/gallery/6.jpg"
               />
               <img
+                class="thumbnail"
                 src="../images/gallery/6_600.jpg"
-                alt="Dexter facing off against one of his targets in a dimly lit room"
+                alt="Miami Metro Police headquarters, where Dexter works by day."
                 loading="lazy"
               />
             </picture>
             <figcaption>
-              A tense standoff between Dexter and one of his targets.
+              Miami Metro Police headquarters, where Dexter works by day.
             </figcaption>
           </figure>
 
@@ -177,14 +198,13 @@
                 srcset="../images/gallery/7.jpg"
               />
               <img
+                class="thumbnail"
                 src="../images/gallery/7_600.jpg"
-                alt="Dexter sitting alone at night, lost in thought about his father's code"
+                alt="The view from Dexter’s desk at Miami Metro."
                 loading="lazy"
               />
             </picture>
-            <figcaption>
-              Dexter reflecting on his father's code late at night.
-            </figcaption>
+            <figcaption>The view from Dexter’s desk at Miami Metro.</figcaption>
           </figure>
 
           <figure class="image_container">
@@ -194,13 +214,15 @@
                 srcset="../images/gallery/8.jpg"
               />
               <img
+                class="thumbnail"
                 src="../images/gallery/8_600.jpg"
-                alt="Miami city skyline silhouetted against an orange dusk sky"
+                alt="The view from the Miami Metro lab, where Dexter analyzes blood evidence."
                 loading="lazy"
               />
             </picture>
             <figcaption>
-              Miami's skyline at dusk, a recurring backdrop in the series.
+              The view from the Miami Metro lab, where Dexter analyzes blood
+              evidence.
             </figcaption>
           </figure>
 
@@ -211,13 +233,14 @@
                 srcset="../images/gallery/9.jpg"
               />
               <img
+                class="thumbnail"
                 src="../images/gallery/9_600.jpg"
                 alt="Dexter's boat Slice of Life moored at a marina dock"
                 loading="lazy"
               />
             </picture>
             <figcaption>
-              Dexter's boat, the "Slice of Life," docked at the marina.
+              Dexter's boat Slice of Life moored at a marina dock
             </figcaption>
           </figure>
         </div>

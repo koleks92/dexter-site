@@ -19,6 +19,7 @@
   object-position: top;
   border-radius: 2px;
   margin-bottom: 0.5rem;
+  pointer-events: none;
 }
 
 #gallery figcaption {
@@ -26,6 +27,55 @@
   padding: 0.5rem;
   border-radius: 2px;
   background-color: var(--text-bg);
+}
+
+/* DESKTOP MODAL */
+#modal {
+  position: fixed;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: #000000ee;
+  z-index: -1;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#modal.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Close button */
+#modal #button_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#modal svg {
+  color: var(--white);
+  justify-self: end;
+  margin: 1rem 1rem 0 0;
+  font-size: 2rem;
+}
+
+/* Modal image */
+#modal picture {
+  place-self: center;
+}
+
+#modal img {
+  max-height: 70vh;
+  max-width: 80vw;
+}
+
+#modal picture figcaption {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 /* MEDIA QUERIES */
@@ -59,6 +109,10 @@
 
   .image_container {
     display: grid;
+  }
+
+  #gallery img {
+    pointer-events: all;
   }
 
   .image_container picture,
