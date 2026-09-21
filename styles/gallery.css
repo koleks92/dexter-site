@@ -56,4 +56,29 @@
   #gallery {
     max-width: 1040px;
   }
+
+  .image_container {
+    display: grid;
+  }
+
+  .image_container picture,
+  .image_container figcaption {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+
+  .image_container img {
+    margin-bottom: 0 !important;
+  }
+
+  .image_container figcaption {
+    align-self: self-end;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .image_container:hover figcaption {
+    align-self: self-end;
+    opacity: 1;
+  }
 }
