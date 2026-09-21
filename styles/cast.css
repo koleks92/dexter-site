@@ -53,14 +53,22 @@ img {
     width: 80%;
   }
 
+  article p {
+    font-size: 1.1rem;
+  }
+
   picture {
     display: flex;
     justify-content: center;
     padding: 2rem 0 1rem;
   }
 
+  p:nth-last-child(2) {
+    display: block;
+  }
+
   .read_more {
-    display: hidden;
+    display: none;
   }
 }
 
@@ -96,19 +104,21 @@ img {
   article p {
     grid-area: 2 / 2 / 3 / 3;
     place-self: center;
-    font-size: 1.2rem;
   }
 
   article:nth-of-type(even) p {
     grid-area: 2 / 1 / 3 / 2;
   }
 
-  article p:last-child {
+  article p:nth-last-child(2) {
     grid-area: 3 / 2 / -1 / 3;
     place-self: start;
+    padding-top: 0;
   }
 
-  article:nth-of-type(even) p:last-child {
+  article:nth-of-type(even) p:nth-last-child(2) {
     grid-area: 3 / 1 / -1 / 2;
+    place-self: start;
+    padding-top: 0;
   }
 }
