@@ -138,6 +138,10 @@ header {
   margin: 1rem 0;
 }
 
+#nav_links a:hover {
+  color: var(--red);
+}
+
 #nav_links .active {
   align-items: center;
   color: var(--red);

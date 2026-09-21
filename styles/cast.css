@@ -24,6 +24,19 @@ p {
   padding: 1rem;
 }
 
+p:nth-last-child(2) {
+  display: none;
+}
+
+p:nth-last-child(2).active {
+  display: block;
+}
+
+.read_more {
+  padding: 0 1rem 1rem;
+  font-style: italic;
+}
+
 img {
   object-fit: cover;
   object-position: left;
@@ -44,6 +57,10 @@ img {
     display: flex;
     justify-content: center;
     padding: 2rem 0 1rem;
+  }
+
+  .read_more {
+    display: hidden;
   }
 }
 
