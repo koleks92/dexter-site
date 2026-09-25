@@ -1,3 +1,4 @@
+// Read more.../Read less
 const readMoreButtons = document.querySelectorAll(".read_more");
 
 // Event listener

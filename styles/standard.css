@@ -136,16 +136,18 @@ header {
   font-family: var(--special);
   font-size: 2rem;
   margin: 1rem 0;
+  letter-spacing: 0.15rem;
 }
 
 #nav_links a:hover {
   color: var(--red);
 }
 
-#nav_links .active {
+#site_links .active {
   align-items: center;
   color: var(--red);
-  font-weight: 700;
+  /* Text shadow insted of weight to aviod text jump */
+  text-shadow: 1px 0 0 currentColor;
 }
 
 #site_links {

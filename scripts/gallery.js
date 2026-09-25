@@ -1,3 +1,4 @@
+// Gallery / Lightbox
 const thumbnails = document.querySelectorAll(".thumbnail");
 const modal = document.querySelector("#modal");
 const closeButton = modal.querySelector("div");
