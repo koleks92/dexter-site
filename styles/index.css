@@ -12,13 +12,13 @@ main img {
   width: 80%;
 }
 
-h2 {
+h3 {
   color: var(--red);
   font-weight: bold;
   font-size: clamp(3rem, 7vw, 10rem);
 }
 
-h3 {
+h2 {
   font-size: clamp(2rem, 5vw, 8rem);
 }
 
@@ -29,11 +29,11 @@ h3 {
     max-width: 600px;
   }
 
-  h2 {
+  h3 {
     font-size: clamp(3rem, 5vw, 5rem);
   }
 
-  h3 {
+  h2 {
     font-size: clamp(2rem, 3vw, 3.5rem);
   }
 }

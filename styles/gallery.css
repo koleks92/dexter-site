@@ -63,7 +63,7 @@
 }
 
 /* Modal image */
-#modal picture {
+#modal figure {
   place-self: center;
 }
 
@@ -72,7 +72,7 @@
   max-width: 80vw;
 }
 
-#modal picture figcaption {
+#modal figure figcaption {
   margin-top: 1rem;
   text-align: center;
   font-size: 1.2rem;
