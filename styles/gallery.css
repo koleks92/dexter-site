@@ -113,6 +113,7 @@
 
   #gallery img {
     pointer-events: all;
+    cursor: pointer;
   }
 
   .image_container picture,

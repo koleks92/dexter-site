@@ -39,4 +39,8 @@ h2 {
 }
 
 /* DESKTOP */
-/* NO NEED */
+@media screen and (min-width: 1024px) {
+  body {
+    background-size: cover;
+  }
+}
